@@ -1,0 +1,79 @@
+{{ define "content" }}
+ <div class="container">
+ <div class="row">
+
+    <div class="col-xs-12 col-md-8 col-md-offset-2 block-1_count  block-1"> {{ .Title }} </div>
+
+ </div>   
+ </div>
+ </header>
+
+
+ <!--=====================
+          Content
+======================-->
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12 col-md-8 col-md-offset-2 slogan">
+
+
+ 	<div class="wrap page1-row2">
+
+			<div class="col-xs-12 col-md-7">
+            	<form action="/register/" id="register" method="post" onsubmit="return checkForm(this);">
+    				<div class="form-group">
+						<label for="newUsername">Username</label>
+						<input type="text" name="username" required placeholder="This field needs to be completed" id="newUsername" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="newEmail">Email</label>
+						<input type="email" name="email" required placeholder="This field needs to be completed"id="newEmail" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="newPassword">New Password</label>
+						<input type="password" name="password" required placeholder="Password must contain at least 6 characters, including UPPER/lowercase and numbers." id="newPassword" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="newPassword">Re input New Password</label>
+						<input type="password" name="reinputpassword" required placeholder="The passwords must match."  id="reinputnewpassword" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="newPostcode">Post/Zip Code</label>
+						<input type="text" name="postcode" id="newPostcode" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="newCity">City</label>
+						<input type="text" name="city" id="newCity" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="newCountry">Country</label>
+						<input type="text" name="country" id="newCountry" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="newMobileNo">Contact/MobileNo</label>
+						<input type="text" name="mobileno" id="newMobileNo" class="form-control">
+					</div>
+    			<input type="submit" value="Register" class="btn btn-primary">
+				</form>
+            </div> 
+
+
+        	 <div class="col-xs-12 col-md-5 border-right">
+            	<h2>Are you already registered<br><a href="/signin/" class="btn btn-primary"><strong>Login</strong></a></h2>
+            	
+                
+                	
+                    <p><strong>Your Privacy:	</strong>
+                <br>
+                Siaria Consulting Services is committed to protecting your privacy. The personal information we collect on this registration page may be used to provide you with information about Sairia's consulting and services in which you may have an interest. By clicking on the [Register] button you are confirming you have read the privacy policy and are giving your consent to this use of your personal information. </p>
+                <a href="#" class="link-2">Read more</a>
+            </div> 
+          
+    
+    </div>
+
+
+ </div>   
+ </div>
+ </div>
+{{ end }}

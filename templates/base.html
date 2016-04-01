@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Siaria Consulting Services</title>
+    <link rel="stylesheet" href="{{ .Static }}css/bootstrap.min.css" type="text/css">
+    <!--
+    <link rel="stylesheet" type="text/css" href="/static/css/app.css">
+    -->
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Passion+One:400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="{{ .Static }}img/favicon.ico">
+    <script type="text/javascript" src="/static/js/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/static/js/pwdval.js"></script>
+  </head>
+  <body>
+  <header>
+    <div class="container">
+    <div class="row">
+      <div class="rel col-md-3 hidden-xs">
+
+      <div class="text1">          <a href="/">
+            <img src="/static/img/logo.png" alt="Siaria Consulting Services">
+          </a>
+      </div>
+ 
+    </div>
+      <!--
+        <h1>
+          <a href="index.html">
+            <img src="/static/img/logo.png" alt="Siaria Consulting Services">
+          </a>
+         
+        </h1>
+      -->
+      <div class="rel col-md-4 hidden-xs">
+
+      <div class="text1"> Siaria Consulting Services 
+      </div>
+    </div>
+
+
+      </div>
+    </div>
+  
+  <section id="stuck_container">
+  <div class="container">
+  <div class="row">
+    
+    <nav class="navbar navbar-inverse navcustom col-md-8 col-md-offset-2" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header navbar-brand-custom">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+              SCS
+          
+         
+        </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+           <ul class="nav navbar-nav">
+            <li class="{{if eq .Title "Welcome to Siaria"}}active{{end}}"><a href="/">Home</a></li>
+            <li class="{{if eq .Title "About Company"}}active{{end}}"><a href="/about/">About us</a></li>
+            <li class="{{if eq .Title "Service"}}active{{end}}"><a href="/service/">Services</a></li>
+            <li class="{{if eq .Title "Contact us"}}active{{end}}"><a href="/contact/">Contact us</a></li>            
+            <li class="{{if eq .Title "Register new member"}}active{{end}}"><a href="/register/">Register</a></li>
+            <li class="{{if eq .Title "Member Sign In"}}active{{end}}"><a href="/signin/">Sign in</a></li>
+           </ul>
+           <!--
+	   <ul class="nav navbar-nav navbar-right">
+		<li><a target="_blank" href="http://www.facebook.com/siaria">
+	           <i class="jdk-icon fa fa-facebook"></i>
+	           </a></li>
+		<li><a target="_blank" href="http://www.twitter.com/Siaria">
+		   <i class="jdk-icon fa fa-twitter"></i>
+		   </a></li>
+		<li><a target="_blank" href="http://www.linkedin.com/pub/Siaria/1a/114/59a">
+		   <i class="jdk-icon fa fa-linkedin"></i>
+		   </a></li>
+	   </ul>
+     -->
+        </div>
+      </div>
+    </nav>
+    
+    </div>
+    </div>
+  </section>
+<!--
+  </header>  
+
+
+    <div class="container">
+-->
+      {{ template "content" . }}
+<!--
+    </div>
+-->
+<!--==============================
+              footer
+=================================-->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="copyright hidden-xs"> 
+        <div class="col-md-6 col-md-offset-2">Siaria Consulting Services &copy; <span id="copyright-year">2016</span> | <a href="#">Privacy Policy</a> 
+
+          
+        </div>
+        <div class="col-md-2">Powered by <a href="http://www.siaria.net/" rel="nofollow">Siaria.net</a></div>
+      </div>
+    </div>
+  </div>  
+</footer>
+<a href="#" id="toTop" class="fa fa-chevron-up"></a>
+
+
+
+  </body>
+</html>
